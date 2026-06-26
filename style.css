@@ -1,0 +1,203 @@
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+    font-family:Arial, Helvetica, sans-serif;
+}
+
+body{
+    background:#f4f7fc;
+    color:#333;
+    line-height:1.6;
+}
+
+header{
+    background:linear-gradient(135deg,#4a6cf7,#6a5acd);
+    color:white;
+    padding:20px 0 50px;
+    text-align:center;
+}
+
+nav{
+    display:flex;
+    justify-content:space-between;
+    align-items:center;
+    padding:0 50px;
+}
+
+.logo{
+    font-size:28px;
+    font-weight:bold;
+}
+
+nav ul{
+    list-style:none;
+    display:flex;
+}
+
+nav ul li{
+    margin-left:20px;
+}
+
+nav ul li a{
+    color:white;
+    text-decoration:none;
+    font-weight:bold;
+    transition:0.3s;
+}
+
+nav ul li a:hover{
+    color:yellow;
+}
+
+.hero{
+    margin-top:30px;
+}
+
+.hero img{
+    width:180px;
+    height:180px;
+    border-radius:50%;
+    border:5px solid white;
+    object-fit:cover;
+    margin-bottom:20px;
+}
+
+.hero h1{
+    font-size:42px;
+    margin-bottom:10px;
+}
+
+.hero h3{
+    margin-bottom:10px;
+    font-weight:normal;
+}
+
+.hero p{
+    width:70%;
+    margin:auto;
+    margin-bottom:20px;
+}
+
+.btn{
+    display:inline-block;
+    background:white;
+    color:#4a6cf7;
+    padding:12px 25px;
+    border-radius:30px;
+    text-decoration:none;
+    font-weight:bold;
+    transition:0.3s;
+}
+
+.btn:hover{
+    background:#222;
+    color:white;
+}
+
+section{
+    padding:60px 10%;
+}
+
+section h2{
+    text-align:center;
+    margin-bottom:30px;
+    color:#4a6cf7;
+    font-size:32px;
+}
+
+#about p{
+    text-align:center;
+    font-size:18px;
+}
+
+.skill-box{
+    display:flex;
+    flex-wrap:wrap;
+    justify-content:center;
+    gap:20px;
+}
+
+.card{
+    background:white;
+    padding:20px;
+    width:170px;
+    text-align:center;
+    border-radius:12px;
+    box-shadow:0 5px 15px rgba(0,0,0,0.15);
+    font-weight:bold;
+    transition:0.3s;
+}
+
+.card:hover{
+    transform:translateY(-8px);
+    background:#4a6cf7;
+    color:white;
+}
+
+.project{
+    background:white;
+    padding:25px;
+    margin-bottom:20px;
+    border-radius:12px;
+    box-shadow:0 5px 15px rgba(0,0,0,0.15);
+    transition:0.3s;
+}
+
+.project:hover{
+    transform:scale(1.03);
+}
+
+#resume,
+#contact{
+    text-align:center;
+}
+
+#contact p{
+    margin:10px 0;
+    font-size:18px;
+}
+
+footer{
+    background:#222;
+    color:white;
+    text-align:center;
+    padding:20px;
+    margin-top:40px;
+}
+.profile-img {
+    width: 180px;
+    height: 180px;
+    border-radius: 50%;
+    object-fit: cover;
+    border: 5px solid white;
+    margin-bottom: 20px;
+}
+
+@media(max-width:768px){
+
+nav{
+    flex-direction:column;
+}
+
+nav ul{
+    flex-direction:column;
+    margin-top:20px;
+}
+
+nav ul li{
+    margin:10px 0;
+}
+
+.hero p{
+    width:90%;
+}
+
+.hero h1{
+    font-size:32px;
+}
+
+.card{
+    width:100%;
+}
+}
